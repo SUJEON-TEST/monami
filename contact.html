@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MONAMI - CONTACT</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo"><div class="logo-mark">M</div> MONAMI W&B EDITION</a>
+  <nav class="nav">
+    <a href="index.html" class="">HOME</a>
+    <a href="features.html" class="">FEATURES</a>
+    <a href="gallery.html" class="">GALLERY</a>
+    <a href="faq.html" class="">FAQ</a>
+    <a href="contact.html" class="active">CONTACT</a>
+  </nav>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+<div id="mobileNav" class="mobile-nav">
+  <a href="index.html">HOME</a><a href="features.html">FEATURES</a><a href="gallery.html">GALLERY</a><a href="faq.html">FAQ</a><a href="contact.html">CONTACT</a>
+</div>
+
+
+<section class="section">
+<p class="page-title">Contact</p>
+<p class="sub">최종 파일입니다. 자리표시자를 수정해 사용하세요.</p>
+<div class="contact-box">
+<div>
+<h2 style="font-family:Times New Roman,serif;font-size:32px;line-height:1.1">문의 안내<br><em style="font-style:italic">placeholder</em></h2>
+<p class="sub" style="margin-top:14px">images 폴더에 프로 컷 5장이 들어있습니다.</p>
+<div style="margin-top:16px;background:var(--gray);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:12px;color:var(--muted)">1. images/*.webp 확인<br>2. contact.html 이메일 수정<br>3. 전체 폴더 업로드</div>
+</div>
+<div>
+<div class="input-box"><span style="font-size:11px;color:var(--muted)">EMAIL</span><input id="emailInput" value="your-email@example.com" readonly></div>
+<div style="display:flex;gap:8px;margin-top:12px"><a href="mailto:your-email@example.com" class="btn btn-black" style="flex:1;justify-content:center">메일 보내기 ↗</a><button class="btn btn-white" style="flex:1" onclick="copyEmail()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>© 2026 MONAMI WHITE & BLACK EDITION · 디자인 수강생 포트폴리오용 · MADE WITHOUT PRICE / EFFICACY / CERTIFICATION</footer>
+<div id="lightbox" onclick="closeLb()"><img id="lbImg" src="" alt="확대"><button style="position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);color:#fff;border:0;cursor:pointer">✕</button></div>
+<script src="script.js"></script>
+</body></html>

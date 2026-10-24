@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MONAMI - FEATURES</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo"><div class="logo-mark">M</div> MONAMI W&B EDITION</a>
+  <nav class="nav">
+    <a href="index.html" class="">HOME</a>
+    <a href="features.html" class="active">FEATURES</a>
+    <a href="gallery.html" class="">GALLERY</a>
+    <a href="faq.html" class="">FAQ</a>
+    <a href="contact.html" class="">CONTACT</a>
+  </nav>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+<div id="mobileNav" class="mobile-nav">
+  <a href="index.html">HOME</a><a href="features.html">FEATURES</a><a href="gallery.html">GALLERY</a><a href="faq.html">FAQ</a><a href="contact.html">CONTACT</a>
+</div>
+
+
+<section class="section">
+<p class="page-title">Features</p>
+<p class="sub">학생과 사무직을 위한 세 가지 포인트. 프로 컷과 함께 구성했습니다.</p>
+<div class="features">
+<div class="f-card"><img src="images/lifestyle-student.webp" alt="필기 흐름" onclick="openLb(this.src)"><div class="txt"><div class="f-num">01 / FLOW</div><h3>끊김 없는 필기 흐름</h3><p class="sub" style="margin:8px 0 0">"잉크가 무한으로 나오는" 컨셉을 시각화. 실제 용량 수치는 표기하지 않았습니다.</p></div></div>
+<div class="f-card"><img src="images/detail-clip.webp" alt="클립 디테일" onclick="openLb(this.src)"><div class="txt"><div class="f-num">02 / GRIP & CLIP</div><h3>휴대성과 그립</h3><p class="sub" style="margin:8px 0 0">블랙 배경 클립 클로즈업으로 메탈 질감을 강조.</p></div></div>
+<div class="f-card"><img src="images/editorial-flatlay.webp" alt="에디토리얼" onclick="openLb(this.src)"><div class="txt"><div class="f-num">03 / EDITORIAL</div><h3>화이트 & 블랙 에디션</h3><p class="sub" style="margin:8px 0 0">빨간 펜만 포인트로 살린 모노크롬 콘셉트.</p></div></div>
+</div>
+</section>
+
+<footer>© 2026 MONAMI WHITE & BLACK EDITION · 디자인 수강생 포트폴리오용 · MADE WITHOUT PRICE / EFFICACY / CERTIFICATION</footer>
+<div id="lightbox" onclick="closeLb()"><img id="lbImg" src="" alt="확대"><button style="position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);color:#fff;border:0;cursor:pointer">✕</button></div>
+<script src="script.js"></script>
+</body></html>

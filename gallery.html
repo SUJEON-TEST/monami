@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MONAMI - GALLERY</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo"><div class="logo-mark">M</div> MONAMI W&B EDITION</a>
+  <nav class="nav">
+    <a href="index.html" class="">HOME</a>
+    <a href="features.html" class="">FEATURES</a>
+    <a href="gallery.html" class="active">GALLERY</a>
+    <a href="faq.html" class="">FAQ</a>
+    <a href="contact.html" class="">CONTACT</a>
+  </nav>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+<div id="mobileNav" class="mobile-nav">
+  <a href="index.html">HOME</a><a href="features.html">FEATURES</a><a href="gallery.html">GALLERY</a><a href="faq.html">FAQ</a><a href="contact.html">CONTACT</a>
+</div>
+
+
+<section class="section">
+<p class="page-title">Gallery</p>
+<p class="sub">새로 제작한 5컷 프로 갤러리. 클릭하면 확대됩니다.</p>
+<div class="gallery">
+<div class="g span-8" onclick="openLb('images/hero-studio.webp')"><img src="images/hero-studio.webp"><span class="g-label">STUDIO • HERO</span></div>
+<div class="g span-4" onclick="openLb('images/detail-clip.webp')"><img src="images/detail-clip.webp"><span class="g-label">CLIP DETAIL</span></div>
+<div class="g span-4" onclick="openLb('images/editorial-flatlay.webp')"><img src="images/editorial-flatlay.webp"><span class="g-label">EDITORIAL FLATLAY</span></div>
+<div class="g span-4" onclick="openLb('images/lifestyle-office.webp')"><img src="images/lifestyle-office.webp"><span class="g-label">OFFICE LIFESTYLE</span></div>
+<div class="g span-4" onclick="openLb('images/lifestyle-student.webp')"><img src="images/lifestyle-student.webp"><span class="g-label">STUDENT WRITING</span></div>
+</div>
+</section>
+
+<footer>© 2026 MONAMI WHITE & BLACK EDITION · 디자인 수강생 포트폴리오용 · MADE WITHOUT PRICE / EFFICACY / CERTIFICATION</footer>
+<div id="lightbox" onclick="closeLb()"><img id="lbImg" src="" alt="확대"><button style="position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);color:#fff;border:0;cursor:pointer">✕</button></div>
+<script src="script.js"></script>
+</body></html>
